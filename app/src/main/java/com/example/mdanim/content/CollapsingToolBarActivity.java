@@ -10,17 +10,17 @@ import android.widget.LinearLayout;
 import com.example.mdanim.R;
 
 /**
- * @author HalyangDream
+ * @author  HalyangDream
  */
-public class DependOnTopActivity extends AppCompatActivity {
-
+public class CollapsingToolBarActivity extends AppCompatActivity {
 
     private LinearLayout linearLayout;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_depenontop);
+        setContentView(R.layout.activity_collapsing_toolbar);
         linearLayout = findViewById(R.id.content_view);
         addView();
     }
@@ -35,5 +35,4 @@ public class DependOnTopActivity extends AppCompatActivity {
             linearLayout.addView(appCompatTextView);
         }
     }
-
 }

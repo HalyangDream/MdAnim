@@ -9,20 +9,32 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
 
-    <android.support.v7.widget.AppCompatImageView
+    <android.support.design.widget.CollapsingToolbarLayout
         android:layout_width="match_parent"
         android:layout_height="260dp"
-        app:layout_scrollFlags="scroll|enterAlwaysCollapsed"/>
+        app:title="这个文字会滑动toolbar"
+        app:contentScrim="@color/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-    <android.support.v7.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="滑动的时候依附在顶部"
-        android:gravity="center"
-        android:textSize="18sp"/>
+      <android.support.v7.widget.AppCompatImageView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:layout_collapseMode="parallax"
+          app:layout_collapseParallaxMultiplier="0.5"
+          />
+
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          app:layout_collapseMode="pin"
+          />
+
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
 
   </android.support.design.widget.AppBarLayout>
-
 
   <android.support.v4.widget.NestedScrollView
       android:layout_width="match_parent"
@@ -36,6 +48,4 @@
         android:orientation="vertical"/>
 
   </android.support.v4.widget.NestedScrollView>
-
-
 </android.support.design.widget.CoordinatorLayout>

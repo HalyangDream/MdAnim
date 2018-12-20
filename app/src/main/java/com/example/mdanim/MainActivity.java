@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import com.example.mdanim.content.CollapsingToolBarActivity;
 import com.example.mdanim.content.DependOnTopActivity;
 
 /**
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private Toolbar toolbar;
-    private AppCompatTextView itemView1;
+    private AppCompatTextView itemView1, itemView2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,18 +29,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         itemView1 = findViewById(R.id.item_1);
+        itemView2 = findViewById(R.id.item_2);
 
         itemView1.setOnClickListener(this);
-
+        itemView2.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.item_1:
+            case R.id.item_1: {
                 Intent intent = new Intent(this, DependOnTopActivity.class);
                 startActivity(intent);
-                break;
+            }
+            break;
+            case R.id.item_2: {
+                Intent intent = new Intent(this, CollapsingToolBarActivity.class);
+                startActivity(intent);
+            }
+
+            break;
             default:
                 break;
         }

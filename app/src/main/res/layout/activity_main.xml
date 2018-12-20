@@ -10,6 +10,7 @@
   <android.support.design.widget.AppBarLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -40,6 +41,13 @@
           android:gravity="center_vertical"
           android:textSize="18sp"/>
 
+      <android.support.v7.widget.AppCompatTextView
+          android:id="@+id/item_2"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:text="CollapsingToolbar(收缩Bar)的使用"
+          android:gravity="center_vertical"
+          android:textSize="18sp"/>
 
     </android.support.v7.widget.LinearLayoutCompat>
 
