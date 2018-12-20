@@ -29,7 +29,7 @@ public class CollapsingToolBarActivity extends AppCompatActivity {
         for (int i = 0; i < 30; i++) {
             AppCompatTextView appCompatTextView = new AppCompatTextView(this);
             appCompatTextView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 96));
-            appCompatTextView.setText("喜欢就点个赞吧");
+            appCompatTextView.setText("喜欢就给Star吧");
             appCompatTextView.setTextSize(18);
             appCompatTextView.setGravity(Gravity.CENTER);
             linearLayout.addView(appCompatTextView);
