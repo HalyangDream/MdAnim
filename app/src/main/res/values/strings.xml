@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MDesignEffect</string>
+    <string name="depend_top_layout">依附顶部布局</string>
+
+</resources>
