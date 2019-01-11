@@ -1,56 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-  <android.support.design.widget.AppBarLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        app:title="首页"
-        app:layout_scrollFlags="scroll|exitUntilCollapsed"
-        app:titleTextColor="@color/colorPrimaryDark"/>
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-  </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                app:title="首页"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:titleTextColor="@color/colorPrimaryDark"/>
+
+    </android.support.design.widget.AppBarLayout>
 
 
-  <android.support.v4.widget.NestedScrollView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <android.support.v7.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-      <android.support.v7.widget.AppCompatTextView
-          android:id="@+id/item_1"
-          android:layout_width="match_parent"
-          android:layout_height="48dp"
-          android:text="吸顶效果"
-          android:gravity="center_vertical"
-          android:textSize="18sp"/>
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/item_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="吸顶效果"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"/>
 
-      <android.support.v7.widget.AppCompatTextView
-          android:id="@+id/item_2"
-          android:layout_width="match_parent"
-          android:layout_height="48dp"
-          android:text="CollapsingToolbar(收缩Bar)的使用"
-          android:gravity="center_vertical"
-          android:textSize="18sp"/>
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/item_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="CollapsingToolbar(收缩Bar)的使用"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"/>
 
-    </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/item_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="根据上下滑动，悬浮按钮消失隐藏"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"/>
 
-  </android.support.v4.widget.NestedScrollView>
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v4.widget.NestedScrollView>
 
 </android.support.design.widget.CoordinatorLayout>

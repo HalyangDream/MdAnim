@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.TextView;
 import com.example.mdanim.content.CollapsingToolBarActivity;
 import com.example.mdanim.content.DependOnTopActivity;
+import com.example.mdanim.content.FloatBtnShowHideActivity;
 
 /**
  * @author HalyangDream
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private Toolbar toolbar;
-    private AppCompatTextView itemView1, itemView2;
+    private AppCompatTextView itemView1, itemView2, itemView3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,9 +31,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setSupportActionBar(toolbar);
         itemView1 = findViewById(R.id.item_1);
         itemView2 = findViewById(R.id.item_2);
-
+        itemView3 = findViewById(R.id.item_3);
         itemView1.setOnClickListener(this);
         itemView2.setOnClickListener(this);
+        itemView3.setOnClickListener(this);
     }
 
     @Override
@@ -48,6 +50,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
             }
 
+            break;
+            case R.id.item_3: {
+                Intent intent = new Intent(this, FloatBtnShowHideActivity.class);
+                startActivity(intent);
+            }
             break;
             default:
                 break;
